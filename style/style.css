@@ -23,4 +23,152 @@
 /* settings end */
 /* ************************************ */
 /* header start */
+.header__nav {
+    background: url(../img/nav__bg.jpg);
+}
 
+.header__nav-bg {
+    background: rgba(0, 0, 0, 0.705);
+    padding: 10px 0;
+}
+
+.header__nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-logo {
+    font-family: var(--C700);
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.header__nav-list {    
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav-item:not(:last-of-type) {
+    margin-right: 25px;
+}
+
+.header__nav-link {
+    font-family: var(--C700);
+    font-size: 25px;
+    color: white;
+    transition: .3s;
+}
+
+.header__nav-link:hover {
+color: red;
+}
+
+.header__nav-icon {
+    display: none;
+    font-size: 25px;
+    padding: 10px;
+    background: rgb(92, 204, 0);
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.header__nav-icon:hover {
+    background: blue;
+}
+
+.header__content {
+    padding-top: 5px;
+}
+
+.header__content-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content-info {
+    text-align: center;
+}
+
+.header__content-title {
+    font-family: var(--C700);
+    font-size: 70px;
+    color: rgb(38, 41, 29);
+    padding-bottom: 40px;
+    cursor: default;
+}
+
+.header__content-text {
+    font-family: var(--RB700);
+    font-size: 20px;
+    color: rgb(32, 68, 66);
+    cursor: default;
+    max-width: 90%;
+}
+
+.header__content-img {
+    display: block;
+    width: 50%;
+}
+/* header end */
+/* ************************************ */
+
+
+
+
+
+
+
+
+/* ************************************ */
+/* media start */
+@media (max-width: 862px) {
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__nav-icon {
+        display: block;
+    }
+
+    .header__content-title {
+        font-size: 40px;
+    }
+
+    .header__content-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header__content-content {
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .header__content-title {
+        padding: 25px 0 15px 0;
+        font-size: 25px;
+    }
+
+    .header__content-text {
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header__nav-logo {
+        font-size: 30px;
+    }
+
+    .header__nav-icon {
+        font-size: 15px;
+    }
+}
